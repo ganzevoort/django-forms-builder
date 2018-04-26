@@ -59,7 +59,6 @@ class Migration(migrations.Migration):
                 ('intro', models.TextField(verbose_name='Intro', blank=True)),
                 ('button_text', models.CharField(default='Submit', max_length=50, verbose_name='Button text')),
                 ('response', models.TextField(verbose_name='Response', blank=True)),
-                ('redirect_url', models.CharField(help_text='An alternate URL to redirect to after form submission', max_length=200, null=True, verbose_name='Redirect url', blank=True)),
                 ('status', models.IntegerField(default=2, verbose_name='Status', choices=[(1, 'Draft'), (2, 'Published')])),
                 ('publish_date', models.DateTimeField(help_text="With published selected, won't be shown until this time", null=True, verbose_name='Published from', blank=True)),
                 ('expiry_date', models.DateTimeField(help_text="With published selected, won't be shown after this time", null=True, verbose_name='Expires on', blank=True)),
